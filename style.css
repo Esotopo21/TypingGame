@@ -1,0 +1,50 @@
+
+
+body::-webkit-scrollbar {display: none;} /* Chrome, Safari and Opera */
+body {-ms-overflow-style: none;}  /* IE and Edge */
+html {scrollbar-width: none;}  /* Firefox */
+
+div#text-container{
+    display: flex;
+    margin: 50px 50px 50px 50px;
+    flex-wrap: wrap;
+
+}
+
+div#main-div{
+    padding: 50px 50px 50px 50px;
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.letter-box{
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    font-size: 40px;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    box-shadow: 2px 2px 2px 2px #888888;
+    margin: 5px 5px 5px 5px;
+}
+
+.letter-box.selected{
+    background-color: yellow !important;
+}
+
+.letter-box.correct{
+    background-color: #008000;
+}
+
+.letter-box.incorrect{
+    background-color: red;
+}
+
+.letter-box.space{
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
